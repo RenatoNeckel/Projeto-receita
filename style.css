@@ -1,0 +1,70 @@
+* { 
+  margin: 0;
+  padding: 0; 
+  /*seletor universal*/ /* esse comando zera todos os espaços da pag*/
+}
+
+:root {
+  font-family: "Alice", serif;
+  line-height: 150%;
+  background-color:  #573A37; /*comando para cor de fnd*/
+  /* root é o um comando principal, faz funcionar o seletor em todo o css;   */
+}
+
+body  {
+  background-image: url(assets/bg.jpg);
+  background-size: cover; /*IMAGEM UNICA E CENTRALIZADA*/
+  display: flex; 
+  flex-direction: column; /*display e flex ajudaram a centralizar a img do body e deixar tudo ok*/
+}
+
+#page {
+  box-sizing: border-box; /* imagino que limitou o que está dentro da caixa page até as bordas da caixa */
+  width: 800px; /* largura da imagem */
+  padding: 24px; /* adiciona espaço nas bordas */
+  background-color: #F0E8C2;  
+  border-radius: 24px; /*borda arredondada*/
+  margin: 48px auto 28px; /*margem ao redor de page*/
+}
+
+img {
+  border-radius: 16px; /*bordas*/
+}
+
+main {
+  padding: 24px;
+}
+
+section + section {
+margin-top: 24px; /* adicionou uma margin no section */
+}
+
+
+h1 {
+   line-height: 140%; /*da altura a linha */
+   font-size: 40px; /*tamanho da fonte*/
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1, h2 {
+  color: #291B1A;
+  margin-bottom: 4px; /*magin em baixo do h1 e 2*/
+  line-height: 150%; /*não é bem altura da linha mas cria espaço entre ela e o proximo*/
+}
+
+ul {
+  padding-left: 24px; /*magin interna de 25px*/
+}
+
+footer {
+  text-align: center ; /*alinhamento de text*/
+  color: #F0E8C2;
+  padding-bottom: 48px; /*magem abaixo do footer*/
+}
+
+footer img {
+  vertical-align: middle; /*alinhamento vertical da fotinho*/
+}
